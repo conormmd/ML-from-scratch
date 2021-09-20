@@ -1,6 +1,6 @@
 import numpy as np
 from numpy.lib.function_base import gradient
-from functions import *
+from functionsLinRegress import *
 data = np.genfromtxt('./1-Regression/data2.txt', delimiter=',')    #Loading training samples
 X = data[:,0:2]; y = data[:,2]      #Taking out data
 m=len(y)
