@@ -38,7 +38,7 @@ X_poly_val -= mu
 X_poly_val /= sigma
 X_poly_val = np.concatenate([np.ones((yval.size, 1)), X_poly_val], axis=1)
 
-lambda_ = 100
+lambda_ = 100 
 theta = trainLinearReg(linearRegCostFunction, X_poly, y,
                              lambda_=lambda_, maxiter=55)
 
